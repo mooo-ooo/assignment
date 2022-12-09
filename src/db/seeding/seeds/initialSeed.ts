@@ -16,7 +16,6 @@ export default class InitialDatabaseSeed implements Seeder {
         const randomNum = getRandomArbitrary(0, 30)
         match.awayTeam = teams[(matchIndex * 2) + 1];
         match.homeTeam = teams[(matchIndex * 2) + 2];
-        console.log(tournaments[randomNum])
         match.tournament = tournaments[randomNum]
         matchIndex ++
         return match;
